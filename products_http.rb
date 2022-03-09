@@ -10,17 +10,17 @@ puts "[4] Thanos One-Piece Swimsuit for Men"
 input_option = gets.chomp
 
 if input_option.to_i == 1
-  response = HTTP.get("http://localhost:3000/get_first_product")
-  puts response.parse[product]
+  response = HTTP.get("http://localhost:3000/first_product")
+  puts response.parse["first_product"]
 elsif input_option.to_i == 2
-  response = HTTP.get("http://localhost:3000/get_second_product")
-  puts response.parse[product]
+  response = HTTP.get("http://localhost:3000/second_product")
+  puts response.parse["second_product"]
 elsif input_option.to_i == 3
-  response = HTTP.get("http://localhost:3000/get_third_product")
-  puts response.parse[product]
+  response = HTTP.get("http://localhost:3000/third_product")
+  puts response.parse["third_product"]
 elsif input_option.to_i == 4
-  response = HTTP.get("http://localhost:3000/get_fourth_product")
-  puts response.parse[product]
+  response = HTTP.get("http://localhost:3000/fourth_product")
+  puts response.parse["fourth_product"]
 else
   puts input_option
 end
