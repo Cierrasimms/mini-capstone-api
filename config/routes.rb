@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get "/fourth_product", controller: "products", action: "get_fourth_product"
 
+  get "/product/:id" => "products#get_products"
 
 end
 

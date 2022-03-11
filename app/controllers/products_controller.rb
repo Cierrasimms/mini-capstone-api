@@ -24,4 +24,10 @@ def get_fourth_product
   fourth_product = Product.fourth
   render json: {product4: fourth_product}
 end
+
+def get_products
+  product = params["id"]
+  product_all = Product.find_by(id: product)
+  render json: product_all.as_json
+end
 end
