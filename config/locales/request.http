@@ -12,4 +12,15 @@ Content-Type: application/json
 }
 
 ### Products Show
-GET http://localhost:3000/products/16
+GET http://localhost:3000/products/2
+
+### Products Update
+PATCH http://localhost:3000/products/2
+Content-Type: application/json
+
+{
+  "price": 35
+}
+
+### Products Destroy
+DELETE http://localhost:3000/products/5
