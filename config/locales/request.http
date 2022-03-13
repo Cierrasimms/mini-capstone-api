@@ -1,0 +1,15 @@
+### Product index
+GET http://localhost:3000/products
+
+### Products Create
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Finger Hands Finger Puppets",
+  "price": 20,
+  "description": "Next time someone asks you to give them a hand with something, you know what to do. This package has a set of tiny hands for each of your left and right hands."
+}
+
+### Products Show
+GET http://localhost:3000/products/16

@@ -10,4 +10,13 @@ def show
   render json: product.as_json
 end
 
+def create
+  product = Product.create(
+    name: params["name"],
+    price: params["price"],
+    description: params["description"]
+  )
+  render json: product.as_json
+end
+
 end
