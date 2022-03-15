@@ -2,19 +2,21 @@ class ProductsController < ApplicationController
 
 def index
   all_products = Product.all
-  render json: all_products.as_json
+  product = all_products.order("created_at")
+  render json: product.as_json
 end
 
 def show
   product = Product.find_by(id: params["id"])
-  render json: product.as_json
+  render json: product.as_json(methods: [:is_discounted?, :tax, :total])
 end
 
 def create
   product = Product.create(
     name: params["name"],
     price: params["price"],
-    description: params["description"]
+    description: params["description"],
+    image_url: params["image_url"]
   )
   render json: product.as_json
 end
@@ -26,6 +28,7 @@ def update
   product.name = params["name"] || product.name
   product.price = params["price"] || product.price
   product.description = params["description"] || product.description
+  product.image_url = params["image_url"] || product.image_url
 
   product.save
   render json: product.as_json
@@ -37,5 +40,6 @@ def destroy
   product.destroy
   render json: "Product has been terminated."
 end
+
 
 end

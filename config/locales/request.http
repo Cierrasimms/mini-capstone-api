@@ -6,21 +6,20 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "Finger Hands Finger Puppets",
-  "price": 20,
-  "description": "Next time someone asks you to give them a hand with something, you know what to do. This package has a set of tiny hands for each of your left and right hands."
-}
+  "name": "A 27-Pound Bucket Of Mac & Cheese",
+  "price": 70,
+  "description": "Call your friends, your family, and maybe invite some frenemies to the party, too, you've got 27 pounds of mac and cheese to eat. If you play your cards right, you can get this mac and cheese to feed you everyday for an entire month, or you can share it with almost 100 people."}
 
 ### Products Show
-GET http://localhost:3000/products/2
+GET http://localhost:3000/products/1
 
 ### Products Update
-PATCH http://localhost:3000/products/2
+PATCH http://localhost:3000/products/12
 Content-Type: application/json
 
 {
-  "price": 35
+  "image_url": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1571683417-rubber-chicken-purse-1571683378.jpg?crop=1.00xw:0.667xh;0,0.168xh&resize=768:*"
 }
 
 ### Products Destroy
-DELETE http://localhost:3000/products/5
+DELETE http://localhost:3000/products/22
