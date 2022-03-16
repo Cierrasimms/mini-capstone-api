@@ -6,4 +6,24 @@ Product.create(name: "Nicolas Cage Pillow", price: 5, image_url: "https://hips.h
 
 Product.create(name: "Thanos One-Piece Swimsuit for Men", price: 78, image_url: "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1565295660-412g9mL-i8L.jpg?crop=1xw:1.00xh;center,top&resize=768:*", description: "Dressing up as the ultimate villain will give you all the confidence come beach day.")
 
+Product.create(name: "The Hen Bag Handbag", price: 25, image_url: "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1571683417-rubber-chicken-purse-1571683378.jpg?crop=1.00xw:0.667xh;0,0.168xh&resize=768:*", description: "Is that the latest Hermès bag straight off the runway? No, it's a rubber chicken purse from Amazon.")
+
+Product.create(name: "Stuffed Blobfish Plush", price: 20, image_url: "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1632326997-31v8fPnS8UL._SL500_.jpg?crop=1xw:1.00xh;center,top&resize=768:*", description: "In 2013, the gelatinous blobfish won the 'World's Ugliest Animal' award. But somehow, these mini plush dolls make them seem kind of adorable.")
+
+Product.create(name: "Mac Inspired Candle", price: 30, image_url: "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1571691785-31gZkTuUknL.jpg?crop=1xw:1.00xh;center,top&resize=768:*", description: "You may not be able to afford a new Macbook (even though Apple has some great Black Friday deals coming up), but you'll be able to get that new Mac smell with this inspired candle")
+
+Product.create(name: "KFC Romance Novel", price: 40, image_url: "https://cdn.thisiswhyimbroke.com/buying-guides-thumb/54/kfc-romance-novel_400x.jpg", description: "The enchanting tale on the pages of this KFC romance novel is so great it's, dare we say it, finger-lickin' good. Read how the colonel comes to the rescue of a damsel in distress complete with cheesy dialog.")
+
+Product.create(name: "Realistic Dog Head Masks", price: 100, image_url: "https://cdn.thisiswhyimbroke.com/buying-guides-thumb/54/realistic-dog-head-masks_400x.jpg", description: "Take a trip to the dog park wearing this mask and NO ONE will think you've gone off the deep end. The high-quality mask is made from 100% latex and fits most adult heads.")
+
+
+
+
+
+
+
+
+
+
+
 puts "All done"

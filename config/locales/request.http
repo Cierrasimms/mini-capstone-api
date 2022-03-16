@@ -11,7 +11,7 @@ Content-Type: application/json
   "description": "Call your friends, your family, and maybe invite some frenemies to the party, too, you've got 27 pounds of mac and cheese to eat. If you play your cards right, you can get this mac and cheese to feed you everyday for an entire month, or you can share it with almost 100 people."}
 
 ### Products Show
-GET http://localhost:3000/products/2
+GET http://localhost:3000/products/8
 
 ### Products Update
 PATCH http://localhost:3000/products/12
