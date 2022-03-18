@@ -4,4 +4,6 @@ class Supplier < ApplicationRecord
   validates :email, presence: true
   validates :phone_number, presence: true
 
+has_many :products
+
 end
