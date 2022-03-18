@@ -12,13 +12,18 @@ def show
 end
 
 def create
-  product = Product.create(
+  product = Product.new(
     name: params["name"],
     price: params["price"],
     description: params["description"],
     image_url: params["image_url"]
   )
+  
+  if product.save
   render json: product
+  else
+    render json: {error_massages: product.errors.full_messages}, status: 422
+  end
 end
 
 def update
@@ -30,8 +35,11 @@ def update
   product.description = params["description"] || product.description
   product.image_url = params["image_url"] || product.image_url
 
-  product.save
-  render json: product
+  if product.save
+    render json: product
+    else
+      render json: {error_massages: product.errors.full_messages},status: 422
+  end
 end
 
 def destroy
@@ -40,6 +48,7 @@ def destroy
   product.destroy
   render json: "Product has been terminated."
 end
+
 
 
 end
