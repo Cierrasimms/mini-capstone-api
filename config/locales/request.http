@@ -49,3 +49,7 @@ Content-Type: application/json
 
 ### Supplier Delete
 DELETE http://localhost:3000/supplier/1
+
+
+### Image Index
+GET http://localhost:3000/image

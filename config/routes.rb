@@ -23,5 +23,12 @@ Rails.application.routes.draw do
  patch "/supplier/:id" => "suppliers#update"
 
  delete "/supplier/:id" => "suppliers#destroy"
+
+### Image 
+
+get "/image" => "images#index"
+
+get "image/:id" => "images#create"
+
 end
 
