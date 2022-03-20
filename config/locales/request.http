@@ -36,7 +36,9 @@ POST http://localhost:3000/supplier
 Content-Type: application/json
 
 {
-  "name": "Walmart"
+  "name": "Amazon",
+  "email": "amazon@test.com", 
+  "phone_number": "(800)987-6543"}
 }
 
 ### Supplier Update
