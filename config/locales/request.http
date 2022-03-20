@@ -13,11 +13,11 @@ Content-Type: application/json
 GET http://localhost:3000/products/8
 
 ### Products Update
-PATCH http://localhost:3000/products/12
+PATCH http://localhost:3000/products/3
 Content-Type: application/json
 
 {
-  "image_url": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1571683417-rubber-chicken-purse-1571683378.jpg?crop=1.00xw:0.667xh;0,0.168xh&resize=768:*"
+  "name": "KFC Romance Novel"
 }
 
 ### Products Destroy
@@ -44,7 +44,7 @@ PATCH http://localhost:3000/supplier/1
 Content-Type: application/json
 
 {
-  "phone_number": "(800)876-3456"
+  "name": "Amazon"
 }
 
 ### Supplier Delete
