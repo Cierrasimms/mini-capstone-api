@@ -17,6 +17,9 @@ def create
     end
   end
 
-
+  def show
+    image = Image.find_by(id: params["product_id"])
+    render json: image
+  end
   
 end

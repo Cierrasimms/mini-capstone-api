@@ -55,3 +55,14 @@ DELETE http://localhost:3000/supplier/1
 
 ### Image Index
 GET http://localhost:3000/image
+
+### Image Create
+
+# POST http://localhost:3000/image
+# Content-Type: application/json
+
+# {
+#   "url": "",
+#   "product_id":
+# }
+
