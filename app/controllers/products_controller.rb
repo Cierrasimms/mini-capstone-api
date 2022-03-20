@@ -16,7 +16,7 @@ def create
     name: params["name"],
     price: params["price"],
     description: params["description"],
-  ]
+  
   )
   
   if product.save
@@ -47,7 +47,4 @@ def destroy
   product.destroy
   render json: "Product has been terminated."
 end
-
-
-
 end
