@@ -75,10 +75,10 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Bob Belcher",
-  "email": "bob@test.com",
-  "password": "ravioliravioli98",
-  "password_confirmation": "ravioliravioli98"
+  "name": "Louise Belcher",
+  "email": "louise@test.com",
+  "password": "louise123",
+  "password_confirmation": "louise123"
 }
 
 
@@ -88,6 +88,18 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "bob@test.com",
-  "password": "ravioliravioli98"
+  "email": "louise@test.com",
+  "password": "louise123"
+}
+
+
+### Photos create
+POST http://localhost:3000/photos
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjozLCJleHAiOjE2Mjk5OTI4NjR9.G2ExsrDYn3oE0vJkvm4T6Po2GbNpH5cqTEaVPVuK_MA
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "width": 640,
+  "height": 480
 }
