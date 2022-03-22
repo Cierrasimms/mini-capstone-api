@@ -58,11 +58,36 @@ GET http://localhost:3000/image
 
 ### Image Create
 
-# POST http://localhost:3000/image
-# Content-Type: application/json
+POST http://localhost:3000/image
+Content-Type: application/json
 
-# {
-#   "url": "",
-#   "product_id":
-# }
+{
+  "url": "",
+  "product_id": 
+}
 
+
+
+
+### User Create
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Bob Belcher",
+  "email": "bob@test.com",
+  "password": "ravioliravioli98",
+  "password_confirmation": "ravioliravioli98"
+}
+
+
+### Sessions Create
+
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "bob@test.com",
+  "password": "ravioliravioli98"
+}

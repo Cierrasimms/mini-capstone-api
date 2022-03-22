@@ -30,5 +30,16 @@ get "/image" => "images#index"
 
 get "image/:id" => "images#create"
 
+get "/image/:id" => "images#show"
+
+patch "/image/:id" => "images#update"
+
+delete "/image/:id" => "images#destroy"
+
+
+post "/users" => "users#create"
+
+
+post "/sessions" => "sessions#create"
 end
 
