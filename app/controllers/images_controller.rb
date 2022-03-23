@@ -16,9 +16,9 @@ def create
     url: params["url"]
   )
   if product.save
-    render json: product
+    render json: image
     else
-      render json: {error_massages: product.errors.full_messages}, status: 422
+      render json: {error_massages: image.errors.full_messages}, status: 422
     end
   end
 

@@ -36,10 +36,25 @@ patch "/image/:id" => "images#update"
 
 delete "/image/:id" => "images#destroy"
 
-
+### Users create
 post "/users" => "users#create"
 
-
+### Sessions create
 post "/sessions" => "sessions#create"
+
+
+### Orders create
+post "/order" => "orders#create"
+
+get "/order/:id" => "orders#show"
+
+get "/order" => "orders#index"
+
+
+
+
+
+
 end
+
 

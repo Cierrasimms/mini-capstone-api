@@ -103,3 +103,23 @@ Content-Type: application/json
   "width": 640,
   "height": 480
 }
+
+
+### Orders Create
+POST http://localhost:3000/order
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDgwODMzODN9.XEezbq3vMneZeJhVu4_PqSYR5PW0jqmHbT31mzq1yaU
+Content-Type: application/json
+
+
+{
+  "product_id": "2",
+  "quantity": "3"
+}
+
+### Orders Show
+GET http://localhost:3000/order/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDgwODcwODh9.656T5aa4VXeayO_ckzOO4_vrJDY39g_69CeSgZ_BALY
+
+### Orders Index
+GET http://localhost:3000/order
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDgwODcwODh9.656T5aa4VXeayO_ckzOO4_vrJDY39g_69CeSgZ_BALY
