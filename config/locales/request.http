@@ -1,3 +1,5 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDgwODg0Nzh9._M5mG_PRyPMu-o_WVlPfvK1tXUjR1hh4y3WNGSTzanU
+
 ### Product index
 GET http://localhost:3000/products
 
@@ -88,14 +90,14 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "louise@test.com",
-  "password": "louise123"
+  "email": "bob@test.com",
+  "password": "ravioliravioli98"
 }
 
 
 ### Photos create
 POST http://localhost:3000/photos
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjozLCJleHAiOjE2Mjk5OTI4NjR9.G2ExsrDYn3oE0vJkvm4T6Po2GbNpH5cqTEaVPVuK_MA
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -107,19 +109,19 @@ Content-Type: application/json
 
 ### Orders Create
 POST http://localhost:3000/order
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDgwODMzODN9.XEezbq3vMneZeJhVu4_PqSYR5PW0jqmHbT31mzq1yaU
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 
 {
-  "product_id": "2",
+  "product_id": "3",
   "quantity": "3"
 }
 
 ### Orders Show
 GET http://localhost:3000/order/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDgwODcwODh9.656T5aa4VXeayO_ckzOO4_vrJDY39g_69CeSgZ_BALY
+Authorization: Bearer {{jwt}}
 
 ### Orders Index
 GET http://localhost:3000/order
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDgwODcwODh9.656T5aa4VXeayO_ckzOO4_vrJDY39g_69CeSgZ_BALY
+Authorization: Bearer {{jwt}}
