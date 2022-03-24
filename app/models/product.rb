@@ -11,6 +11,8 @@ class Product < ApplicationRecord
   has_many :orders
   has_many :images
   has_many :category_product
+  has_many :categories, through: :category_product
+
   
 
 
@@ -31,6 +33,8 @@ def total
 total = price + tax
 return total
 end
+
+
 
 
 end
