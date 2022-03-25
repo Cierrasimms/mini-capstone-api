@@ -50,6 +50,10 @@ get "/order/:id" => "orders#show"
 
 get "/order" => "orders#index"
 
+### Carted_products create
+
+post "cart" => "carted_products#create"
+
 
 
 
