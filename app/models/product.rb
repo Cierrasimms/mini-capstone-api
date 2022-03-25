@@ -13,8 +13,6 @@ class Product < ApplicationRecord
   has_many :category_product
   has_many :categories, through: :category_product
 
-  
-
 
   def is_discounted? 
   if price < 10
