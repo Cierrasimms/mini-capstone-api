@@ -13,6 +13,7 @@ class Product < ApplicationRecord
   has_many :category_product
   has_many :categories, through: :category_product
   has_many :carted_products 
+  has_many :orders, through: :carted_products
 
 
   def is_discounted? 
