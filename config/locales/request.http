@@ -139,3 +139,8 @@ Content-Type: application/json
   "order_id": "4",
   "status": ""
 }
+
+### Carted_products index
+
+GET http://localhost:3000/cart
+Authorization: Bearer {{jwt}}

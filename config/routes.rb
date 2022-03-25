@@ -54,7 +54,7 @@ get "/order" => "orders#index"
 
 post "cart" => "carted_products#create"
 
-
+get "cart" => "carted_products#index"
 
 
 
