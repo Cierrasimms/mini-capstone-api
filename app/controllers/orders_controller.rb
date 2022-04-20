@@ -21,9 +21,8 @@ class OrdersController < ApplicationController
       product_id: params["product_id"],
       subtotal: calculated_subtotal,
       tax: calculated_tax,
-      total: calculated_total,
-      carted_products: 
-    
+      total: calculated_total
+  
     )
     
     if order.save
