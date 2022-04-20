@@ -34,6 +34,7 @@ def update
   product.name = params["name"] || product.name
   product.price = params["price"] || product.price
   product.description = params["description"] || product.description
+  product.quantity = params["quantity"] || product.quantity
 
   if product.save
     render json: product

@@ -52,9 +52,9 @@ get "/order" => "orders#index"
 
 ### Carted_products create
 
-post "cart" => "carted_products#create"
+post "carted_products" => "carted_products#create"
 
-get "cart" => "carted_products#index"
+get "carted_products" => "carted_products#index"
 
 
 

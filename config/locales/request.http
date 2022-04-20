@@ -1,4 +1,5 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDgyNTcxMzN9.vlK_9doGJIa3rJVetLHVTMNVoOqGrG6LQZ8mdmfU2Sw
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTA1ODQyNTl9.rfQLioZ2uiDBDPxbqz75NNBZswDt9XrKBZG7djEBguY
+  "email": "bob@test.com
 
 ### Product index
 GET http://localhost:3000/products
@@ -8,7 +9,7 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "KFC Romance Novel"
+  "name": "KFC bucket "
 }
 
 ### Products Show
@@ -19,7 +20,8 @@ PATCH http://localhost:3000/products/3
 Content-Type: application/json
 
 {
-  "name": "KFC Romance Novel"
+  "name": "KFC Romance Novel",
+  "description": "The enchanting tale on the pages of this KFC romance novel is so great it's, dare we say it, finger-lickin' good. Read how the colonel comes to the rescue of a damsel in distress complete with cheesy dialog.",
 }
 
 ### Products Destroy
@@ -38,7 +40,7 @@ POST http://localhost:3000/supplier
 Content-Type: application/json
 
 {
-  "name": "Amazon",
+  "name": "Boing",
   "email": "amazon@test.com", 
   "phone_number": "(800)987-6543"}
 }
@@ -114,8 +116,7 @@ Content-Type: application/json
 
 
 {
-  "product_id": "3",
-  "quantity": "3"
+  "product_id": "5",
 }
 
 ### Orders Show
@@ -128,7 +129,7 @@ Authorization: Bearer {{jwt}}
 
 ### Carted_products Create
 
-POST http://localhost:3000/cart
+POST http://localhost:3000/carted_products
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
@@ -136,11 +137,10 @@ Content-Type: application/json
 {
   "product_id": "3",
   "quantity": "3",
-  "order_id": "4",
   "status": ""
 }
 
 ### Carted_products index
 
-GET http://localhost:3000/cart
+GET http://localhost:3000/carted_products
 Authorization: Bearer {{jwt}}
