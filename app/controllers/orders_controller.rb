@@ -22,8 +22,6 @@ class OrdersController < ApplicationController
       subtotal: calculated_subtotal,
       tax: calculated_tax,
       total: calculated_total
-  
-    )
     
     if order.save
     render json: order
