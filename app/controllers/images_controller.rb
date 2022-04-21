@@ -42,5 +42,6 @@ def create
     image.destroy
     render json: "Image has been terminated."
   end
-  end
-
+  
+end
+end
