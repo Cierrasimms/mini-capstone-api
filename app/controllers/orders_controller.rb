@@ -22,8 +22,10 @@ class OrdersController < ApplicationController
       tax: calculated_tax,
       total: calculated_total
     )
+
     if order.save
-    render json: order
+      carted_products.update_all(status: "purchased", order_id: order.id)
+    render json: order.as_json
     else
       render json: {error_massages: order.errors.full_messages}, status: 422
     end
