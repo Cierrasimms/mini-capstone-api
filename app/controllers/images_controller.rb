@@ -18,8 +18,9 @@ class ImagesController < ApplicationController
       render json: image
       else
         render json: {error_massages: image.errors.full_messages}, status: 422
-      end
+      
     end
+  end
   
     def update
       image_id = params["id"]
@@ -40,7 +41,5 @@ class ImagesController < ApplicationController
       image = Image.find_by(id: image_id)
       image.destroy
       render json: "Image has been terminated."
-    end
-    
-  end
+    end 
 end
